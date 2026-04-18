@@ -1,7 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Anchor, Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
+import Image from "next/image";
+
+const LOGO_URL =
+  "https://img1.wsimg.com/isteam/ip/bfcb096d-6713-4f3d-b3c9-e28e7dfa857b/MSPI5630-430a950.JPG";
 
 const BOOK_URL = "https://alaskanmajesticfishing.com";
 
@@ -35,11 +39,15 @@ export function Nav() {
         <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between py-4">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div
-              className="w-10 h-10 rounded-full flex items-center justify-center transition-transform group-hover:scale-110"
-              style={{ backgroundColor: "#C4952A" }}
-            >
-              <Anchor className="h-5 w-5" style={{ color: "#030B14" }} />
+            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 ring-2 ring-[#C4952A]/40 transition-all group-hover:ring-[#C4952A]">
+              <Image
+                src={LOGO_URL}
+                alt="Alaskan Majestic Fishing Charters"
+                width={48}
+                height={48}
+                unoptimized
+                className="w-full h-full object-cover scale-110"
+              />
             </div>
             <div>
               <div className="font-display font-bold text-base leading-tight" style={{ color: "#F0F6FF" }}>
