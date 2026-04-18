@@ -59,14 +59,7 @@ export default function HomePage() {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="transition-colors"
-                style={{ color: "#7A8FA6" }}
-                onMouseEnter={(e) =>
-                  ((e.target as HTMLElement).style.color = "#C9A84C")
-                }
-                onMouseLeave={(e) =>
-                  ((e.target as HTMLElement).style.color = "#7A8FA6")
-                }
+                className="transition-colors text-[#7A8FA6] hover:text-[#C9A84C]"
               >
                 {item}
               </a>
