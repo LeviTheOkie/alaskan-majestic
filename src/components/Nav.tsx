@@ -39,12 +39,12 @@ export function Nav() {
         <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between py-4">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-full overflow-hidden shrink-0 ring-2 ring-[#C4952A]/40 transition-all group-hover:ring-[#C4952A]">
+            <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 ring-2 ring-[#C4952A]/50 transition-all group-hover:ring-[#C4952A] group-hover:shadow-[0_0_20px_rgba(196,149,42,0.4)]">
               <Image
                 src={LOGO_URL}
                 alt="Alaskan Majestic Fishing Charters"
-                width={48}
-                height={48}
+                width={56}
+                height={56}
                 unoptimized
                 className="w-full h-full object-cover scale-110"
               />

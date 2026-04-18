@@ -50,6 +50,12 @@ body {
 .animate-slow-zoom  { animation: slowZoom 12s ease-in-out infinite alternate; }
 .animate-shimmer    { animation: shimmer 2.5s ease-in-out infinite; }
 
+@keyframes logoGlow {
+  0%, 100% { box-shadow: 0 0 30px 6px rgba(196,149,42,0.3), 0 0 60px 12px rgba(196,149,42,0.1); }
+  50%       { box-shadow: 0 0 50px 12px rgba(196,149,42,0.5), 0 0 90px 20px rgba(196,149,42,0.2); }
+}
+.animate-logo-glow { animation: logoGlow 3s ease-in-out infinite; }
+
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }

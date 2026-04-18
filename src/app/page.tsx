@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Anchor, Fish, MapPin, Phone, Star, Shield, Clock, Users, ChevronRight, Wind } from "lucide-react";
+import { Fish, MapPin, Phone, Star, Shield, Clock, Users, ChevronRight, Wind } from "lucide-react";
 import { Nav } from "@/components/Nav";
 import { FAQ } from "@/components/FAQ";
 
@@ -101,6 +101,19 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 pb-24 pt-40 w-full">
           <div className="max-w-3xl">
+            {/* Logo stamp in hero */}
+            <div className="mb-8 animate-fade-in">
+              <div className="w-36 h-36 rounded-full overflow-hidden animate-logo-glow ring-4 ring-[#C4952A]/60">
+                <Image
+                  src="https://img1.wsimg.com/isteam/ip/bfcb096d-6713-4f3d-b3c9-e28e7dfa857b/MSPI5630-430a950.JPG"
+                  alt="Alaskan Majestic Fishing Charters"
+                  width={144}
+                  height={144}
+                  unoptimized
+                  className="w-full h-full object-cover scale-110"
+                />
+              </div>
+            </div>
             <div className="section-label animate-fade-in">Homer, Alaska · Halibut Capital of the World</div>
             <h1
               className="font-display font-black leading-none mb-6 animate-fade-in-up delay-100"
@@ -577,11 +590,15 @@ export default function HomePage() {
       <footer className="border-t py-10" style={{ backgroundColor: "#030B14", borderColor: "#0F2A47" }}>
         <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div
-              className="w-8 h-8 rounded-full flex items-center justify-center"
-              style={{ backgroundColor: "#C4952A" }}
-            >
-              <Anchor className="h-3.5 w-3.5" style={{ color: "#030B14" }} />
+            <div className="w-10 h-10 rounded-full overflow-hidden ring-2 ring-[#C4952A]/40 shrink-0">
+              <Image
+                src="https://img1.wsimg.com/isteam/ip/bfcb096d-6713-4f3d-b3c9-e28e7dfa857b/MSPI5630-430a950.JPG"
+                alt="Alaskan Majestic"
+                width={40}
+                height={40}
+                unoptimized
+                className="w-full h-full object-cover scale-110"
+              />
             </div>
             <span className="text-sm font-medium" style={{ color: "#6B8BA8" }}>
               © {new Date().getFullYear()} Alaskan Majestic Fishing Charters · Homer, AK
